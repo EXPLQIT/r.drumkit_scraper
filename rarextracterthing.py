@@ -63,7 +63,7 @@ def extract_files(source_folder, destination_folder):
     
     rename_extracted_folders(destination_folder)  # Call here after extraction and cleanup
 
-source_folder = r'C:\TESTICLES'
-destination_folder = r'G:\EXPLOIT\TEST KITS'
+source_folder = r'SOURCE\FOLDER\PATH\HERE'
+destination_folder = r'DEST\FOLDER\PATH\HERE'
 
 extract_files(source_folder, destination_folder)
