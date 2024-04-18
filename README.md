@@ -3,7 +3,7 @@
 
 Basically scrapes the 'all' category for r/Drumkits and downloads them to a specified folder. 
 
-It'll prompt every 10 minutes if you want to continue scraping, you can adjust how often the prompt asks here:
+It'll prompt every 1 minute if you want to continue scraping, you can adjust how often the prompt asks here:
 ```sh
   prompt_interval = 60 # This is in seconds (1 minute is default)
   ```
