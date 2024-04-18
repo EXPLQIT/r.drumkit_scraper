@@ -18,7 +18,7 @@ base_url = 'https://old.reddit.com'
 subreddit_path = '/r/drumkits/'
 category = 'top'
 time_filter = 'all'
-download_directory = r'C:\TESTICLES'
+download_directory = r'YOUR\LOCATION\GOES\HERE'
 
 if not os.path.exists(download_directory):
     os.makedirs(download_directory)
