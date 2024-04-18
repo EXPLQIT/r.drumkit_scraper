@@ -28,7 +28,8 @@ Be sure to change this to the location you wish to have the downloads in:
 
 *entirely made with ChatGPT*
 
-Bonus meme:
+## *Bonus Meme*
+
 I've included a script to extract all the rars/zips to a specified folder as well and cleans up the folder names (sorta kinda).
 
 Be sure to update the source path (where the rar files are located) and the destination_folder (where you want the exported zips/rars.)
