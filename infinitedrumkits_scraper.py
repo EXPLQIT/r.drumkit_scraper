@@ -132,7 +132,7 @@ def main():
     processed_urls = load_processed_urls(url_log_path)
 
     start_time = time.time()
-    prompt_interval = 60  # 10 minutes in seconds
+    prompt_interval = 60 # This is in seconds (1 minute is default)
     last_prompt_time = start_time
 
     current_url = build_reddit_url(subreddit_path, category, time_filter)
