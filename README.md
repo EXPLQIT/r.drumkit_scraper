@@ -1,7 +1,7 @@
 <!-- GETTING STARTED -->
 ## r/Drumkits Scraper Tool
 
-Basically scrapes the 'all' category for r/Drumkits and downloads them to a specified folder. 
+Basically scrapes the 'all' category in r/Drumkits for download links and downloads them to a specified folder. 
 
 It'll prompt every 1 minute if you want to continue scraping, you can adjust how often the prompt asks here:
 ```sh
