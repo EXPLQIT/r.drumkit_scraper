@@ -27,3 +27,13 @@ Be sure to change this to the location you wish to have the downloads in:
 - I haven't let it scrape for longer than about 20-30 minutes, so I'm not sure if it'll get hung up on something down the line.
 
 *entirely made with ChatGPT*
+
+Bonus meme:
+I've included a script to extract all the rars/zips to a specified folder as well and cleans up the folder names (sorta kinda).
+
+Be sure to update the source path (where the rar files are located) and the destination_folder (where you want the exported zips/rars.)
+You can update them here:
+```sh
+  source_folder = r'SOURCE\FOLDER\PATH\HERE'
+  destination_folder = r'DEST\FOLDER\PATH\HERE'
+  ```
