@@ -29,7 +29,14 @@ Be sure to change this to the location you wish to have the downloads in:
 
 ## *Bonus Meme*
 
-I've included a script to extract all the rars/zips to a specified folder as well and cleans up the folder names (sorta kinda).
+I've included a script to extract all the rars/zips to a specified folder as well and cleans up the folder names (sorta kinda). 
+* You need 7-Zip for this to work. *
+
+You will need to update the location of the 7-Zip executable (7z.exe) here:
+
+```sh
+  result = subprocess.run(['7ZIP\EXE\LOCACTION\GOES\HERE', 'x', file_path, f'-o{extraction_target_folder}'], check=True, text=True, capture_output=True)
+  ```
 
 Be sure to update the source path (where the rar files are located) and the destination_folder (where you want the exported zips/rars.)
 You can update them here:
