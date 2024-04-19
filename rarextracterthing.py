@@ -12,7 +12,7 @@ def extract_file(file_path, destination_folder):
 
     try:
         # Execute 7-Zip command to extract into the created subfolder
-        result = subprocess.run(['C:\\Program Files\\7-Zip\\7z', 'x', file_path, f'-o{extraction_target_folder}'], check=True, text=True, capture_output=True)
+        result = subprocess.run(['7ZIP\LOCACTION\GOES\HERE', 'x', file_path, f'-o{extraction_target_folder}'], check=True, text=True, capture_output=True)
         return (file_path, True, result.stdout)
     except subprocess.CalledProcessError as e:
         # Attempt to delete the archive if extraction fails
