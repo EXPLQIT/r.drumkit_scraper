@@ -29,7 +29,8 @@ Be sure to change this to the location you wish to have the downloads in:
 
 ## *Bonus Meme*
 
-I've included a script to extract all the rars/zips to a specified folder as well and cleans up the folder names (sorta kinda). 
+I've included a script to extract all the rars/zips to a specified folder as well and cleans up the folder names (sorta kinda).
+
 *You need 7-Zip for this script to work*
 
 You will need to update the location of the 7-Zip executable (7z.exe) here:
