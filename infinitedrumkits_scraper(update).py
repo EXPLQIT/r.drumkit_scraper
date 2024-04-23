@@ -14,10 +14,9 @@ import json
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
-# Hardcoded parameters
 base_url = 'https://old.reddit.com'
-subreddit_path = '/r/drumkits/'  # Hardcoded subreddit path
-download_directory = 'C:\\TESTICLES'  # Hardcoded download path
+subreddit_path = '/r/drumkits/'
+download_directory = 'YOURE//PATH//GOES//HERE'
 
 if not os.path.exists(download_directory):
     os.makedirs(download_directory)
@@ -34,7 +33,7 @@ adapter = HTTPAdapter(max_retries=retry_strategy)
 session.mount("https://", adapter)
 session.mount("http://", adapter)
 
-processed_urls = set()  # This should be initialized outside of the function
+processed_urls = set()
 processed_urls_log_path = os.path.join(download_directory, 'processed_urls.log')
 
 def load_processed_urls():
@@ -67,7 +66,7 @@ def download_file(url, filename):
             return False
         with open(full_path, 'wb') as f:
             for chunk in response.iter_content(chunk_size=8192):
-                if chunk:  # filter out keep-alive new chunks
+                if chunk:
                     f.write(chunk)
         logger.info('Successfully downloaded %s', filename)
         return True
