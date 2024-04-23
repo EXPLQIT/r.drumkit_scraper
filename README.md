@@ -25,16 +25,22 @@ In the updated version (infinitedrumkits_scraper(update).py) -
   - The 'top' category has a time filter (hour, day, week, month, year, & all) so you can narrow the scraper down to the specific time.
   - The console is a little less spammy now as well.
 
-      ** Important Notes **
+** Important Notes **
       
-      The 'downloaded_urls.log' has changed to 'processed_urls.log', so what I would recommend is to rename the 'downloaded_urls.log' to 'processed_urls.log' in the directory of your exported downloads.
-      Otherwise it'll attempt to download everything that you've already downloaded. 
+The 'downloaded_urls.log' has changed to 'processed_urls.log', so what I would recommend is to rename the 'downloaded_urls.log' to 'processed_urls.log' in the directory of your exported downloads.
+Otherwise it'll attempt to download everything that you've already downloaded. 
+
+If you want to adjust how often the prompt asks if you want to continue scraping, you can change the interval to your choosing (5 min = 300 seconds):
+
+```sh
+  def should_continue_scraping(start_time, interval=300):
+  ```  
       
-      Make sure to also update: (the '//' is necessary)
+Make sure to also update: (the '//' is necessary)
       
-      ```sh
-       download_directory = 'YOURE//PATH//GOES//HERE'
-        ```
+```sh
+  download_directory = 'YOURE//PATH//GOES//HERE'
+  ```
 
 # Notes:
 
