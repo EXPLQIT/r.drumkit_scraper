@@ -17,6 +17,25 @@ Be sure to change this to the location you wish to have the downloads in:
 ```sh
   download_directory = r'YOUR\LOCATION\GOES\HERE'
   ```
+## Update:
+
+In the updated version (infinitedrumkits_scraper(update).py) - 
+  - It'll now prompt the user for the category (hot, top, new, rising, etc)
+  - It can process more urls.
+  - The 'top' category has a time filter (hour, day, week, month, year, & all) so you can narrow the scraper down to the specific time.
+  - The console is a little less spammy now as well.
+
+      ** Important Notes **
+      
+      The 'downloaded_urls.log' has changed to 'processed_urls.log', so what I would recommend is to rename the 'downloaded_urls.log' to 'processed_urls.log' in the directory of your exported downloads.
+      Otherwise it'll attempt to download everything that you've already downloaded. 
+      
+      Make sure to also update: (the '//' is necessary)
+      
+      ```sh
+       download_directory = 'YOURE//PATH//GOES//HERE'
+        ```
+
 # Notes:
 
 - If you stop the script for whatever reason and run the script again, it wont download previously downloaded packs. A downloaded_urls.txt file will be created upon running the script for the first time, it'll log the links that'll already be downloaded so I wouldn't delete the download_urls.txt file unless you want it to re-download all the packs again.
